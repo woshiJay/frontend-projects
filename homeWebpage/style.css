@@ -1,0 +1,197 @@
+@import url('https://fonts.cdnfonts.com/css/couture');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+#main_Icon {
+    width: 50px;
+    border-radius: 10%;
+    align-items: center;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    background-color: gray;
+    align-items: center;
+}
+
+.navigation a {
+    font-family: 'Couture', sans-serif;
+    text-decoration: none; /* remove hyperlink underline */
+    font-weight: 600;
+    color: black;
+
+    padding: 6px 10px;
+    border-radius: 5px;
+    margin: auto 0 10px;
+
+    align-items: center;
+}
+
+.navigation a:hover,
+.navigation a:active {
+    color:white;
+}
+
+.container {
+    color: black;
+    font-family: 'Garamond', sans-serif;
+    margin-top: 10rem;
+}
+
+/* @media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+} */
+
+.intro {
+    display: grid;
+    margin: auto;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+
+    width: auto;
+    height: auto;
+
+    text-align: center;
+
+}
+
+#homeImg {
+    margin-top: 1.5rem;
+    max-width: 1000px;
+    max-height: 1000px;
+    background-size: contain;
+    background-position: center center;
+}
+
+.group-1, .group-2 {
+    display: grid;
+    margin: auto;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+    background-color: rgb(184, 180, 173);
+}
+
+
+@media(prefers-reduced-motion) {
+    .group-1, .group-2, .group-3, .group-4, .group-5 {
+        transition: none;
+    }
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+    filter:blur(0);
+    transform: translateX(0);
+}
+
+.title {
+    margin: auto;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+    padding: 1px 5px;
+    display: block;
+
+    width: auto; 
+    height: auto;
+
+    text-align: center;
+    font-family: 'Couture', sans-serif;
+    text-decoration: underline;
+}
+
+.description {
+    margin: 1rem 1rem;
+    text-align: center;
+}
+
+.group-3, .group-4, .group-5{
+    margin-top: 1.5rem;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+/* #text1 {
+    position: absolute;
+    margin-bottom: 4rem;
+    font-size: 3em;
+} */
+
+.text {
+    position: absolute;
+    margin-bottom: 10rem;
+    font-size: 1.5em;
+    color: white;
+}
+
+#img1, #img2 { 
+    display: grid;
+    place-items: center;
+    align-content: center;
+
+    width: 75%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* #img1, #img2{
+    max-width: 30%;
+} */
+
+
+.logos {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+}
+
+.logo {
+    max-width: 50%;
+}
+
+.logo:nth-child(2) {
+    transition-delay: 200ms;
+}
+.logo:nth-child(3) {
+    transition-delay: 400ms;
+}
+.logo:nth-child(4) {
+    transition-delay: 600ms;
+}
+.logo:nth-child(5) {
+    transition-delay: 800ms;
+}
