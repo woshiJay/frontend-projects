@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: monospace;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    grid-template-rows: repeat(3, auto);
+
+}
+
+.title {
+    text-align: center;
+}
+
+.screen {
+    color: white;
+    font-size: 30px;
+    text-align: right;
+    overflow: hidden;
+    padding: 20px;
+    margin-bottom: -1rem;
+    background-color: black;
+}
+
+/* button */
+
+button {
+    border: none;
+}
+
+button:hover {
+    background-color: #afafaf;
+}
+
+button:active {
+    transform: translateY(2px);
+    background-color: rgb(182, 182, 182);
+    box-shadow: 0 2px #666;
+
+}
+
+.buttonContainer {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    gap: 5px;
+    padding: 15px;
+    background-color: black;
+}
+
+.nums, .twoCol, .threeCol{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(93, 93, 93);
+    border-radius: 2%;
+}
+
+.answer {
+    color: white;
+    background-color: black;
+    text-align: end;
+    padding: 30px;
+    grid-column: span 1;
+}
+
+.twoCol {
+    padding: auto 75px;
+    grid-column: span 2;
+}
+
+.threeCol {
+    grid-column: span 3;
+}
+
+.nums:nth-child(3),
+.nums:nth-child(7),
+.nums:nth-last-child(7),
+.nums:nth-last-child(3),
+.nums:last-child {
+    background-color: #ffa837;
+}
