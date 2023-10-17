@@ -11,3 +11,4 @@ Some html css projects that I've worked on...
 8. Resume
 9. Technical Documentation
 10. Tribute Page
+11. Calculator (no floating numbers)
