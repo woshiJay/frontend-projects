@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+img {
+    max-width: 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #43281c;
+    gap: 1rem;
+    color: #ffe7a9;
+    padding: 1rem;
+}
+
+.navlist {
+    display: flex;
+    margin-right: 1rem;
+    gap: 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color:#ffe7a9;
+    text-decoration: none;
+}
+
+hr {
+    color: #b08968;
+}
+
+/* menu items */
+.deco {
+    border-radius: 5px;
+    background-color: #eee1d5;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.headerColor {
+    color: #8a5c30;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);    
+    margin-top: 3rem;
+    gap: 2rem;
+}
+
+.menuCtn {
+    grid-row: 1/span 2;
+    margin-left: 2rem;
+}
+
+.indent {
+    margin-left: 1rem;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas: 
+    "quantity title price"
+    "quantity options price";
+}
+
+.item-quantity {
+    grid-area: quantity;
+}
+
+.item-title {
+    grid-area: title;
+    font-weight: bold;
+}
+
+.item-price {
+    grid-area: price;
+    font-weight: bold;
+}
+
+.item-options-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.item-options {
+    grid-area: options;
+    font-size: 0.8rem;
+    color: #b08968;
+}
+
+input::placeholder {
+    font-size: 10px;
+    font-style: italic;
+}
+
+.inputBox {
+    border: 1.5px #b08968 solid;
+    border-radius: 100px;
+    padding: 5px;
+    text-indent: 10px;
+    background-color: #eee1d5;
+    margin-bottom: 20px;
+    max-width: 75%;
+}
+
+.ccv {
+    width: 20%;
+}
+
+
+.receipt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.receiptTable {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 75px;
+    margin-bottom: 20px;
+}
+
+.receiptTable td {
+    padding: 15px;
+}
+
+.receiptTable td:last-child {
+    text-align: right;
+}
+
+.total {
+    font-weight: bold;
+}
+
+.order {
+    justify-content: center;
+    align-items: center;
+}
+
+.orderBtn {
+    padding: 1rem;
+    background-color: #43281c;
+    color: #ffe7a9;
+    border-radius: 100px;
+    border: 1px #b08968 solid;
+    width: 90%;
+}
+
+.orderBtn:hover {
+    background-color: #523f2f;
+}
+
+.orderBtn:active {
+    transform: translateY(2px);
+}
