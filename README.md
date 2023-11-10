@@ -3,7 +3,7 @@ Some html css projects that I've worked on...
 
 1. Balance Sheet
 2. Day & Night City Animation
-3. Coffee Menu
+3. Coffee Menu (2 revisions)
 4. Home Page Animations with JS
 5. Nutrition Label
 6. Product Landing Page
