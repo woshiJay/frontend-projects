@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Coffee Masters</title>
+</head>
+
+<header>
+    <div class="header">
+        <a href="" target="_blank"><img src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png" href="Logo"></a>
+        <h1>Coffee Masters</h1>
+        <nav class="navlist">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact Us</a>
+        </nav>
+    </div>
+</header>
+<body>
+    <section class="menu">
+        <div class="menuCtn deco">
+            <h2 class="headerColor indent">Items</h1>
+            <div class="item">
+                <p class="item-quantity">1x</p>
+                <p class="item-title">Cappucino</p>
+                <p class="item-price">$6.00</p>
+                <ul class="item-options-list">
+                    <li class="item-options">Light Foam</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="item">
+                <p class="item-quantity">1x</p>
+                <p class="item-title">Cappucino</p>
+                <p class="item-price">$7.90</p>
+                <ul class="item-options-list">
+                    <li class="item-options">Almond Milk</li>
+                    <li class="item-options">Double Espresso Shot</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="item">
+                <p class="item-quantity">1x</p>
+                <p class="item-title">Croissant</p>
+                <p class="item-price">$5.37</p>
+                <ul class="item-options-list">
+                    <li class="item-options">Butter</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="name deco">
+            <h3 class="headerColor indent">Name</h3>
+            <input class="inputBox indent" id="inputName" type="text" placeholder="example: John Smith">
+        </div>
+
+        <div class="payment deco">
+            <h3 class="headerColor indent">Payment</h3>
+            <input class="inputBox indent" id="cardNum" type="text" placeholder="Card Number">
+            <input class="inputBox ccv indent" id="ccvNum" type="text" placeholder="CVV">
+        </div>
+    </section>
+    <section class="receipt">
+        <table class="receiptTable">
+            <tbody>
+                <tr>
+                    <td>Subtotal:</td>
+                    <td>$19.27</td>
+                </tr>
+                <tr>
+                    <td>Tax:</td>
+                    <td>$0.96</td>
+                </tr>
+                <tr class="total">
+                    <td>Total:</td>
+                    <td>$20.23</td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="orderBtn">Place order</button>
+    </section>
+</body>
+</html>
