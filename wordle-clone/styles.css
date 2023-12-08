@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.title {
+    text-align: center;
+}
+
+.divider {
+    max-width: 30%;
+    margin-bottom: 5rem;
+}
+
+.scoreboard {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+/* button settings */
+.score-container {
+    padding: 20px 20px;
+    border: 1px solid;
+}
+
+.info-bar {
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.show {
+    visibility: visible;
+}
+
+.loading {
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
