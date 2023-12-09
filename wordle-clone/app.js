@@ -4,19 +4,19 @@ const ANSWER_LENGTH = 5;
 const ROUNDS = 6;
 
 async function init() {
+
     let currentGuess = '';
     let currentRow = 0;
     let isLoading = true;
     let done = false;
 
     // res is a shortword for response from api
-    const res = await fetch("https://words.dev-apis.com/word-of-the-day"); //?random=1
+    const res = await fetch("https://words.dev-apis.com/word-of-the-day?random=1"); //?random=1
     const resObj = await res.json(); // or const { word }
     const word = resObj.word.toUpperCase();
     const wordParts = word.split("");
     setLoading(isLoading);
     isLoading = false;
-
 
     function addLetter(letter)  {
         if (currentGuess.length < ANSWER_LENGTH) {
@@ -89,11 +89,13 @@ async function init() {
         if (currentGuess === word) {
             // win
             alert("You've completed the puzzle!");
+            document.querySelector('.title').classList.add("winner");
             done = true;
             return;
         } else if (currentRow === ROUNDS) {
             alert(`Try again next time! The correct word was ${word}`);
-            done = true;    
+            done = true;
+            return;
         }
         currentGuess = '';        
     }
@@ -111,6 +113,12 @@ async function init() {
             }, 30);
         }
     }
+
+    const restartButton = document.getElementById('restartButton');
+    restartButton.addEventListener('click', function() {
+        // Reload the page when the button is clicked
+        location.reload();
+    });
 
     document.addEventListener('keydown', function handleKeyPress (event) {
         if (done || isLoading) {
