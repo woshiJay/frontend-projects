@@ -1,6 +1,5 @@
 # frontend-projects
-Some html css projects that I've worked on...
-
+html & css projects from freecodecamp
 1. Balance Sheet
 2. Day & Night City Animation
 3. Coffee Menu (2 revisions)
@@ -12,4 +11,3 @@ Some html css projects that I've worked on...
 9. Technical Documentation
 10. Tribute Page
 11. Calculator (no floating numbers)
-12. Wordle
